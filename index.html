@@ -1,101 +1,232 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAFRA</title>
+    <title>TAFRA — Wear Your Confidence</title>
+    <meta name="description" content="TAFRA — ملابس وعطور بإيحاء إسكندراني. اطلب قطعتك مباشرة على واتساب، والتوصيل لكل المحافظات.">
+    <meta name="theme-color" content="#d4af37">
+    <meta property="og:title" content="TAFRA — Wear Your Confidence">
+    <meta property="og:description" content="متجر TAFRA: اطلب عبر واتساب.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/alexandria-storefront.jpeg">
+    <link rel="icon" type="image/jpeg" href="img/logo-on-black.jpeg">
 
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="2.css"/>
 </head>
 <body>
 
-    <!-- شريط التنقل العلوي -->
+    <!-- ===================== شريط الإعلان ===================== -->
     <div class="top-bar">
-        <div class="top-bar-inner"></div>
+        <div class="top-bar-inner">
+            <span data-i18n="announce">للطلب والاستفسار — راسلنا على واتساب</span>
+            <a class="top-bar-link" id="topBarPhone" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> <span id="topBarPhoneText"></span></a>
+        </div>
     </div>
 
-    <!-- رأس الموقع (Header) -->
-    <header class="header"> 
-        <div class="logo-container">
-            <img src="tafra.img/WhatsApp Image 2026-09-14 at 2.48.43 PM (2).jpeg" alt="TAFRA Logo">
+    <!-- ===================== الهيدر ===================== -->
+    <header class="header">
+        <a class="logo-container" href="#home">
+            <img src="img/logo-on-black.jpeg" alt="TAFRA">
             <span class="logo-text">TAFRA</span>
-        </div>
+        </a>
 
-        <nav class="nav-links">
-            <a href="#home" class="active" data-i18n="home">Home</a>
-            <a href="#about" data-i18n="about">Collections</a>
-            <a href="#portfolio" data-i18n="portfolio">About Us</a>
-            <a href="#Style Guid" data-i18n="Style Guid">Style Guide</a>
-            <a href="#contact" data-i18n="contact">Contact</a>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active" data-i18n="n_home">الرئيسية</a>
+            <a href="#collections" data-i18n="n_collections">المجموعات</a>
+            <a href="#shop" data-i18n="n_shop">المتجر</a>
+            <a href="#style" data-i18n="n_style">دليل الموضة</a>
+            <a href="#about" data-i18n="n_about">من نحن</a>
+            <a href="#contact" data-i18n="n_contact">تواصل</a>
         </nav>
 
-        <div style="display: flex; align-items: center; gap: 15px;">
-            <!-- مربع البحث -->
+        <div class="header-tools">
             <div class="search-box">
-                <input type="text" placeholder="Search..." class="search-input" data-i18n-placeholder="search">
-                <button class="search-btn" aria-label="Search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                <input type="search" id="searchInput" class="search-input" placeholder="ابحث..." data-i18n-placeholder="search" autocomplete="off">
+                <button class="search-btn" type="button" id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <!-- زر تسجيل الدخول -->
-            <button class="signin-btn" type="button" data-i18n="signin">Sign In</button>
+            <button class="lang-btn" type="button" id="langBtn" aria-label="Switch language">EN</button>
+            <a class="signin-btn order-top" id="waTop" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="order_now">اطلب الآن</span></a>
+            <button class="menu-btn" type="button" id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
 
+    <main>
+    <!-- ===================== الهيرو ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-inner">
+            <p class="eyebrow" data-i18n="hero_eyebrow">Wear your confidence</p>
+            <h1 data-i18n="hero_title">TAFRA — من إسكندرية، بقصة حديثة</h1>
+            <p class="hero-sub" data-i18n="hero_sub">قطع مختارة بعناية وتغليف رسمي. اختار قطعتك واطلبها بضغطة على واتساب، ونتفق على المقاس والتوصيل.</p>
+            <div class="hero-cta">
+                <a href="#shop" class="btn-gold" data-i18n="hero_cta1">شوف المعروض</a>
+                <a href="#collections" class="btn-line" data-i18n="hero_cta2">المجموعات</a>
+            </div>
+            <ul class="hero-facts">
+                <li><i class="fa-solid fa-truck-fast"></i> <span data-i18n="fact_ship">توصيل لكل المحافظات</span></li>
+                <li><i class="fa-solid fa-box-open"></i> <span data-i18n="fact_pack">تغليف TAFRA رسمي</span></li>
+                <li><i class="fa-solid fa-headset"></i> <span data-i18n="fact_order">الطلب بالواتساب</span></li>
+            </ul>
+        </div>
+    </section>
 
-    <section class="gallery-section">
-    <div class="gallery-header">
-        <h2 data-i18n="lookbook-title">TAFRA Lookbook</h2>
-        <p data-i18n="lookbook-subtitle">استكشف أحدث تصميماتنا وأزياءنا الحصرية</p>
+    <!-- ===================== المجموعات ===================== -->
+    <section class="gallery-section" id="collections">
+        <div class="gallery-header">
+            <h2 data-i18n="col_title">مجموعات TAFRA</h2>
+            <p data-i18n="col_sub">استكشف أحدث تصميماتنا وأزياءنا الحصرية</p>
+        </div>
+        <div class="gallery-grid" id="collectionsGrid"></div>
+    </section>
+
+    <!-- ===================== المتجر ===================== -->
+    <section class="shop-section" id="shop">
+        <div class="gallery-header">
+            <h2 data-i18n="shop_title">المتجر</h2>
+            <p data-i18n="shop_sub">اضغط على أي قطعة للتفاصيل، واطلبها مباشرة على واتساب</p>
+        </div>
+
+        <div class="filters" id="filters"></div>
+
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-note hidden" id="emptyNote" data-i18n="no_results">مفيش نتيجة للبحث ده. جرّب كلمة تانية.</p>
+    </section>
+
+    <!-- ===================== دليل الموضة ===================== -->
+    <section class="style-section" id="style">
+        <div class="gallery-header">
+            <h2 data-i18n="style_title">دليل الموضة</h2>
+            <p data-i18n="style_sub">تلات ملاحظات تخلي أي قطعة TAFRA تليق عليك</p>
+        </div>
+        <div class="style-grid">
+            <article class="style-card">
+                <img src="img/set-hoodie-tees.jpeg" alt="" loading="lazy">
+                <h3 data-i18n="s1_t">القصة الواسعة</h3>
+                <p data-i18n="s1_b">الأوفرسايز بيحب بنطلون مستقيم أو ضيق تحت، عشان التوازن يبان. لو حابب تلبسها على بعض، اختار مقاس واحد تحت.</p>
+            </article>
+            <article class="style-card">
+                <img src="img/gift-set-box.jpeg" alt="" loading="lazy">
+                <h3 data-i18n="s2_t">الأسود والذهبي</h3>
+                <p data-i18n="s2_b">هوية TAFRA لونين بس: أسود وذهبي. إكسسوار واحد ذهبي كفاية — أكتر من كده يخلي الشكل مزدحم.</p>
+            </article>
+            <article class="style-card">
+                <img src="img/hangtag-b.jpeg" alt="" loading="lazy">
+                <h3 data-i18n="s3_t">التغليف جزء من الهدية</h3>
+                <p data-i18n="s3_b">كل طلب بيجي في كيس وعلبة TAFRA. لو هتهدي، قولنا على واتساب نكتب كارت الإهداء باسمك.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===================== من نحن ===================== -->
+    <section class="about-section" id="about">
+        <div class="about-grid">
+            <div class="about-copy">
+                <h2 data-i18n="about_title">تفره: تراث إسكندرية، صياغة حديثة</h2>
+                <p data-i18n="about_b1">TAFRA اتأسست في الإسكندرية على فكرة واحدة: المدينة عندها ذوق بصري خاص — حجر قديم، بحر، وناس بتلبس بثقة. بنحوّل الحس ده في قطع معاصرة وتغليف ينفع يتهدى.</p>
+                <p data-i18n="about_b2">كل قطعة بتخرج من عندنا في علبة وكيس بشعار TF المذهب، وطلبك بيتأكد عليه على واتساب قبل الشحن عشان المقاس يظبط من أول مرة.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-gold" data-i18n="about_cta">ابعتلنا رسالة</a>
+                </div>
+            </div>
+            <div class="about-media">
+                <img src="img/alexandria-storefront.jpeg" alt="TAFRA" loading="lazy">
+                <img src="img/boutique-interior.jpeg" alt="TAFRA" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== تواصل ===================== -->
+    <section class="contact-section" id="contact">
+        <div class="gallery-header">
+            <h2 data-i18n="contact_title">تواصل معنا</h2>
+            <p data-i18n="contact_sub">اكتب طلبك هنا وهيوصلنا على طول، أو كلّمنا على واتساب</p>
+        </div>
+
+        <div class="contact-grid">
+            <form class="card-form" id="leadForm" novalidate>
+                <label for="fName" data-i18n="f_name">الاسم</label>
+                <input id="fName" name="full_name" type="text" required maxlength="120" autocomplete="name">
+
+                <label for="fEmail" data-i18n="f_email">البريد الإلكتروني</label>
+                <input id="fEmail" name="email" type="email" required maxlength="254" autocomplete="email">
+
+                <label for="fPhone" data-i18n="f_phone">رقم الواتساب (اختياري)</label>
+                <input id="fPhone" name="phone" type="tel" maxlength="40" autocomplete="tel">
+
+                <label for="fMessage" data-i18n="f_message">رسالتك</label>
+                <textarea id="fMessage" name="message" rows="4" required maxlength="4000" data-i18n-placeholder="f_message_ph" placeholder="القطعة، المقاس، والمدينة اللي هنتوصيل لها..."></textarea>
+
+                <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <button type="submit" class="btn-gold wide" id="sendBtn" data-i18n="f_send">إرسال</button>
+                <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="contact-side">
+                <a class="side-item" id="waSide" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span><b data-i18n="side_wa">واتساب</b><small id="waSideNum"></small></span>
+                </a>
+                <a class="side-item" id="mailSide">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span><b data-i18n="side_mail">بريد إلكتروني</b><small id="mailSideText"></small></span>
+                </a>
+                <div class="side-item static">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span><b data-i18n="side_city">الإسكندرية</b><small data-i18n="side_city_sub">الشحن لكل المحافظات</small></span>
+                </div>
+                <figure class="side-media"><img src="img/cafe-bags.jpeg" alt="TAFRA" loading="lazy"></figure>
+            </aside>
+        </div>
+    </section>
+    </main>
+
+    <!-- ===================== الفوتر ===================== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="img/logo-on-black.jpeg" alt="">
+                <span>TAFRA</span>
+                <small data-i18n="footer_tag">Wear your confidence</small>
+            </div>
+            <nav class="footer-links">
+                <a href="#collections" data-i18n="n_collections">المجموعات</a>
+                <a href="#shop" data-i18n="n_shop">المتجر</a>
+                <a href="#style" data-i18n="n_style">دليل الموضة</a>
+                <a href="#contact" data-i18n="n_contact">تواصل</a>
+            </nav>
+            <p class="footer-note">© <span id="year"></span> TAFRA · <span data-i18n="footer_rights">كل الحقوق محفوظة</span></p>
+        </div>
+    </footer>
+
+    <!-- ===================== واتساب عائم ===================== -->
+    <a class="wa-fab" id="waFab" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ===================== نافذة تفاصيل المنتج ===================== -->
+    <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-back" id="modalBack"></div>
+        <div class="modal-box">
+            <button class="modal-close" type="button" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <img id="modalImg" alt="">
+            <div class="modal-body">
+                <span class="modal-cat" id="modalCat"></span>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+                <div class="modal-opts" id="modalOpts"></div>
+                <p class="modal-price" id="modalPrice"></p>
+                <a class="btn-gold wide" id="modalOrder" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="order_wa">اطلب على واتساب</span></a>
+            </div>
+        </div>
     </div>
-    
-    <div class="gallery-grid">
-        <!-- صورة 1 -->
-        <div class="gallery-card">
-            <img src="tafra.img/WhatsApp Image 2026-09-14 at 2.48.45 PM (4).jpeg" alt="TAFRA Outfit 1">
-            <div class="gallery-overlay">
-                <span class="gallery-category">Oversized Collection</span>
-                <h3 class="gallery-title">Signature Streetwear</h3>
-            </div>
-        </div>
 
-        <!-- صورة 2 -->
-        <div class="gallery-card">
-            <img src="tafra.img/WhatsApp Image 2026-09-14 at 2.48.47 PM.jpeg" alt="TAFRA Outfit 2">
-            <div class="gallery-overlay">
-                <span class="gallery-category">Classic Edition</span>
-                <h3 class="gallery-title">Minimalist Style</h3>
-            </div>
-        </div>
-
-        <!-- صورة 3 -->
-        <div class="gallery-card">
-            <img src="tafra.img/WhatsApp Image 2026-09-14 at 2.48.42 PM.jpeg" alt="TAFRA Outfit 3">
-            <div class="gallery-overlay">
-                <span class="gallery-category">New Arrival</span>
-                <h3 class="gallery-title">Luxury Winter Wear</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-
+    <script src="catalog.js"></script>
+    <script src="2.js"></script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
 </html>
