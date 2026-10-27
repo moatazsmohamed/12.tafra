@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA long sleeve tee">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <g stroke="#0f0e0c" stroke-width="6" stroke-linejoin="round">
+    <path d="M330 260 L430 210 Q500 248 570 210 L670 260 L790 640 L700 668 L668 560 L668 840 Q500 860 332 840 L332 560 L300 668 L210 640 Z" fill="#17150f"/>
+    <path d="M430 212 Q500 256 570 212 Q500 240 430 212" fill="#0f0e0c"/>
+  </g>
+  <g fill="none" stroke="#d4af37" stroke-width="7" stroke-linecap="round">
+    <path d="M500 350 L500 450"/><path d="M470 375 L530 375"/><path d="M478 415 L522 415"/>
+    <path d="M520 360 Q470 390 480 445"/>
+  </g>
+  <text x="500" y="915" font-family="Inter,Arial" font-size="26" letter-spacing="8" fill="#b89728" text-anchor="middle">TAFRA</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA leather wallet">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <g stroke="#0f0e0c" stroke-width="6" stroke-linejoin="round">
+    <rect x="250" y="360" width="500" height="320" rx="24" fill="#2a231c"/>
+    <path d="M250 420 L750 420" stroke="#4a3f31" stroke-width="4"/>
+  </g>
+  <g stroke="#d4af37" stroke-width="4" stroke-dasharray="16 12" fill="none">
+    <rect x="272" y="382" width="456" height="276" rx="16"/>
+  </g>
+  <g fill="none" stroke="#d4af37" stroke-width="8" stroke-linecap="round">
+    <path d="M500 470 L500 580"/><path d="M462 500 L538 500"/><path d="M474 548 L526 548"/>
+    <path d="M522 482 Q460 524 476 586"/>
+  </g>
+  <text x="500" y="880" font-family="Inter,Arial" font-size="24" letter-spacing="8" fill="#8a7a5c" text-anchor="middle">TAFRA</text>
+</svg>

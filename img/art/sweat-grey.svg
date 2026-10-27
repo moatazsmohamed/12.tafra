@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA grey crewneck sweatshirt">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <g stroke="#8f8a80" stroke-width="6" stroke-linejoin="round">
+    <path d="M320 300 L420 245 Q500 290 580 245 L680 300 L780 470 L690 520 L690 840 Q500 862 310 840 L310 520 L220 470 Z" fill="#b9b6b0"/>
+    <path d="M425 248 Q500 300 575 248 Q500 275 425 248" fill="#a5a29c"/>
+    <path d="M310 800 L690 800 L690 840 Q500 862 310 840 Z" fill="#a5a29c"/>
+  </g>
+  <g fill="none" stroke="#17150f" stroke-width="7" stroke-linecap="round">
+    <path d="M500 380 L500 470"/><path d="M472 402 L528 402"/><path d="M480 438 L520 438"/>
+    <path d="M518 390 Q474 420 484 466"/>
+  </g>
+  <text x="500" y="925" font-family="Inter,Arial" font-size="26" letter-spacing="8" fill="#6f6a61" text-anchor="middle">TAFRA</text>
+</svg>

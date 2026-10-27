@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA grey tee">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <g stroke="#8f8a80" stroke-width="6" stroke-linejoin="round">
+    <path d="M330 250 L430 205 Q500 240 570 205 L670 250 L760 400 L665 445 L665 830 Q500 850 335 830 L335 445 L240 400 Z" fill="#b9b6b0"/>
+    <path d="M430 205 Q500 250 570 205 Q500 235 430 205" fill="#a5a29c"/>
+  </g>
+  <g fill="none" stroke="#17150f" stroke-width="7" stroke-linecap="round">
+    <path d="M500 330 L500 430"/><path d="M470 355 L530 355"/><path d="M478 395 L522 395"/>
+    <path d="M520 340 Q470 370 480 425"/>
+  </g>
+  <text x="500" y="905" font-family="Inter,Arial" font-size="26" letter-spacing="8" fill="#6f6a61" text-anchor="middle">TAFRA</text>
+</svg>

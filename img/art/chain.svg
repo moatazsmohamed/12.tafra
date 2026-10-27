@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA chain necklace">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <path d="M300 220 Q500 470 700 220" fill="none" stroke="#d4af37" stroke-width="14" stroke-linecap="round"/>
+  <path d="M318 220 Q500 448 682 220" fill="none" stroke="#8a6f1f" stroke-width="4" stroke-dasharray="10 14"/>
+  <g stroke="#0f0e0c" stroke-width="6">
+    <circle cx="500" cy="520" r="26" fill="#d4af37"/>
+    <rect x="420" y="556" width="160" height="230" rx="20" fill="#17150f"/>
+  </g>
+  <g fill="none" stroke="#d4af37" stroke-width="7" stroke-linecap="round">
+    <path d="M500 610 L500 712"/><path d="M466 636 L534 636"/><path d="M476 680 L524 680"/>
+    <path d="M520 622 Q462 660 476 716"/>
+  </g>
+  <text x="500" y="900" font-family="Inter,Arial" font-size="24" letter-spacing="8" fill="#8a7a5c" text-anchor="middle">SIGNATURE CHAIN</text>
+</svg>

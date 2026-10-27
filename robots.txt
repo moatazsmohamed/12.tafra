@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moatazsmohamed.github.io/12.tafra/sitemap.xml

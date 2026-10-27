@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAFRA — Wear Your Confidence</title>
-    <meta name="description" content="TAFRA — ملابس وعطور بإيحاء إسكندراني. اطلب قطعتك مباشرة على واتساب، والتوصيل لكل المحافظات.">
+    <title>TAFRA — البس ثقتك</title>
+    <meta name="description" content="TAFRA — أوفرسايز، هوديز، عطور وإكسسوارات بإيحاء إسكندراني. اختار من المتجر واطلب على واتساب، والتوصيل لكل المحافظات.">
     <meta name="theme-color" content="#d4af37">
     <meta property="og:title" content="TAFRA — Wear Your Confidence">
-    <meta property="og:description" content="متجر TAFRA: اطلب عبر واتساب.">
+    <meta property="og:description" content="متجر TAFRA: أوفرسايز، عطور وإكسسوارات. اطلب عبر واتساب.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="img/alexandria-storefront.jpeg">
-    <link rel="icon" type="image/jpeg" href="img/logo-on-black.jpeg">
+    <link rel="icon" type="image/svg+xml" href="img/art/tee-black.svg">
+    <link rel="canonical" href="https://moatazsmohamed.github.io/12.tafra/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,7 @@
     <!-- ===================== شريط الإعلان ===================== -->
     <div class="top-bar">
         <div class="top-bar-inner">
-            <span data-i18n="announce">للطلب والاستفسار — راسلنا على واتساب</span>
+            <span data-i18n="announce">الشحن لكل المحافظات · التأكيد على واتساب</span>
             <a class="top-bar-link" id="topBarPhone" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> <span id="topBarPhoneText"></span></a>
         </div>
     </div>
@@ -40,7 +41,9 @@
             <a href="#home" class="active" data-i18n="n_home">الرئيسية</a>
             <a href="#collections" data-i18n="n_collections">المجموعات</a>
             <a href="#shop" data-i18n="n_shop">المتجر</a>
-            <a href="#style" data-i18n="n_style">دليل الموضة</a>
+            <a href="#look" data-i18n="n_look">اللك بوك</a>
+            <a href="#sizes" data-i18n="n_size">المقاسات</a>
+            <a href="#faq" data-i18n="n_faq">أسئلة</a>
             <a href="#about" data-i18n="n_about">من نحن</a>
             <a href="#contact" data-i18n="n_contact">تواصل</a>
         </nav>
@@ -62,16 +65,21 @@
         <div class="hero-inner">
             <p class="eyebrow" data-i18n="hero_eyebrow">Wear your confidence</p>
             <h1 data-i18n="hero_title">TAFRA — من إسكندرية، بقصة حديثة</h1>
-            <p class="hero-sub" data-i18n="hero_sub">قطع مختارة بعناية وتغليف رسمي. اختار قطعتك واطلبها بضغطة على واتساب، ونتفق على المقاس والتوصيل.</p>
+            <p class="hero-sub" data-i18n="hero_sub">قطع مختارة بعناية وتغليف رسمي.</p>
             <div class="hero-cta">
-                <a href="#shop" class="btn-gold" data-i18n="hero_cta1">شوف المعروض</a>
+                <a href="#shop" class="btn-gold" data-i18n="hero_cta1">اتسوق دلوقتي</a>
                 <a href="#collections" class="btn-line" data-i18n="hero_cta2">المجموعات</a>
             </div>
             <ul class="hero-facts">
                 <li><i class="fa-solid fa-truck-fast"></i> <span data-i18n="fact_ship">توصيل لكل المحافظات</span></li>
                 <li><i class="fa-solid fa-box-open"></i> <span data-i18n="fact_pack">تغليف TAFRA رسمي</span></li>
-                <li><i class="fa-solid fa-headset"></i> <span data-i18n="fact_order">الطلب بالواتساب</span></li>
+                <li><i class="fa-solid fa-comments"></i> <span data-i18n="fact_order">التأكيد بالواتساب</span></li>
             </ul>
+        </div>
+        <div class="hero-stats">
+            <div><b id="statPieces">16</b><small data-i18n="stat_pieces">قطعة في المجموعة</small></div>
+            <div><b>2-4</b><small data-i18n="stat_shipping">دولرة للتوصيل</small></div>
+            <div><b>TF</b><small data-i18n="stat_since">من إسكندرية</small></div>
         </div>
     </section>
 
@@ -84,17 +92,44 @@
         <div class="gallery-grid" id="collectionsGrid"></div>
     </section>
 
+    <!-- ===================== الأكثر طلبًا ===================== -->
+    <section class="shop-section best-section" id="best">
+        <div class="gallery-header">
+            <h2 data-i18n="best_title">الأكثر طلبًا</h2>
+            <p data-i18n="best_sub">القطع اللي بتخلص بسرعة</p>
+        </div>
+        <div class="product-grid" id="bestGrid"></div>
+    </section>
+
     <!-- ===================== المتجر ===================== -->
     <section class="shop-section" id="shop">
         <div class="gallery-header">
             <h2 data-i18n="shop_title">المتجر</h2>
-            <p data-i18n="shop_sub">اضغط على أي قطعة للتفاصيل، واطلبها مباشرة على واتساب</p>
+            <p data-i18n="shop_sub">اضغط على أي قطعة للتفاصيل والمقاس، وضيفها لأوردرك</p>
         </div>
 
         <div class="filters" id="filters"></div>
 
+        <div class="shop-bar">
+            <span id="countNote" class="count-note"></span>
+            <select id="sortSelect" class="sort-select" aria-label="Sort">
+                <option value="new">الأحدث</option>
+                <option value="low">السعر: من الأقل</option>
+                <option value="high">السعر: من الأعلى</option>
+            </select>
+        </div>
+
         <div class="product-grid" id="productGrid"></div>
-        <p class="empty-note hidden" id="emptyNote" data-i18n="no_results">مفيش نتيجة للبحث ده. جرّب كلمة تانية.</p>
+        <p class="empty-note hidden" id="emptyNote" data-i18n="no_results">مفيش نتيجة للبحث ده.</p>
+    </section>
+
+    <!-- ===================== اللك بوك ===================== -->
+    <section class="look-section" id="look">
+        <div class="gallery-header">
+            <h2 data-i18n="look_title">اللك بوك</h2>
+            <p data-i18n="look_sub">هوية TAFRA: أسود وذهبي وتغليف يتهدى</p>
+        </div>
+        <div class="look-grid" id="lookGrid"></div>
     </section>
 
     <!-- ===================== دليل الموضة ===================== -->
@@ -107,19 +142,40 @@
             <article class="style-card">
                 <img src="img/set-hoodie-tees.jpeg" alt="" loading="lazy">
                 <h3 data-i18n="s1_t">القصة الواسعة</h3>
-                <p data-i18n="s1_b">الأوفرسايز بيحب بنطلون مستقيم أو ضيق تحت، عشان التوازن يبان. لو حابب تلبسها على بعض، اختار مقاس واحد تحت.</p>
+                <p data-i18n="s1_b">الأوفرسايز بيحب بنطلون مستقيم أو ضيق تحت.</p>
             </article>
             <article class="style-card">
                 <img src="img/gift-set-box.jpeg" alt="" loading="lazy">
                 <h3 data-i18n="s2_t">الأسود والذهبي</h3>
-                <p data-i18n="s2_b">هوية TAFRA لونين بس: أسود وذهبي. إكسسوار واحد ذهبي كفاية — أكتر من كده يخلي الشكل مزدحم.</p>
+                <p data-i18n="s2_b">هوية TAFRA لونين بس: أسود وذهبي.</p>
             </article>
             <article class="style-card">
                 <img src="img/hangtag-b.jpeg" alt="" loading="lazy">
                 <h3 data-i18n="s3_t">التغليف جزء من الهدية</h3>
-                <p data-i18n="s3_b">كل طلب بيجي في كيس وعلبة TAFRA. لو هتهدي، قولنا على واتساب نكتب كارت الإهداء باسمك.</p>
+                <p data-i18n="s3_b">كل طلب بيجي في كيس وعلبة TAFRA.</p>
             </article>
         </div>
+    </section>
+
+    <!-- ===================== دليل المقاسات ===================== -->
+    <section class="size-section" id="sizes">
+        <div class="gallery-header">
+            <h2 data-i18n="size_title">دليل المقاسات</h2>
+            <p data-i18n="size_sub">القياسات بالسنتيمتر على القطعة نفسها</p>
+        </div>
+        <div class="size-wrap">
+            <table class="size-table" id="sizeTable"></table>
+            <p class="size-note" data-i18n="size_note">القصّة واسعة بالتصميم.</p>
+        </div>
+    </section>
+
+    <!-- ===================== الأسئلة الشائعة ===================== -->
+    <section class="faq-section" id="faq">
+        <div class="gallery-header">
+            <h2 data-i18n="faq_title">أسئلة بتتكرر</h2>
+            <p data-i18n="faq_sub">الطلب والشحن والتبديل</p>
+        </div>
+        <div class="faq-list" id="faqList"></div>
     </section>
 
     <!-- ===================== من نحن ===================== -->
@@ -127,8 +183,8 @@
         <div class="about-grid">
             <div class="about-copy">
                 <h2 data-i18n="about_title">تفره: تراث إسكندرية، صياغة حديثة</h2>
-                <p data-i18n="about_b1">TAFRA اتأسست في الإسكندرية على فكرة واحدة: المدينة عندها ذوق بصري خاص — حجر قديم، بحر، وناس بتلبس بثقة. بنحوّل الحس ده في قطع معاصرة وتغليف ينفع يتهدى.</p>
-                <p data-i18n="about_b2">كل قطعة بتخرج من عندنا في علبة وكيس بشعار TF المذهب، وطلبك بيتأكد عليه على واتساب قبل الشحن عشان المقاس يظبط من أول مرة.</p>
+                <p data-i18n="about_b1">TAFRA اتأسست في الإسكندرية على فكرة واحدة.</p>
+                <p data-i18n="about_b2">كل قطعة بتخرج من عندنا في علبة وكيس بشعار TF المذهب.</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn-gold" data-i18n="about_cta">ابعتلنا رسالة</a>
                 </div>
@@ -159,7 +215,7 @@
                 <input id="fPhone" name="phone" type="tel" maxlength="40" autocomplete="tel">
 
                 <label for="fMessage" data-i18n="f_message">رسالتك</label>
-                <textarea id="fMessage" name="message" rows="4" required maxlength="4000" data-i18n-placeholder="f_message_ph" placeholder="القطعة، المقاس، والمدينة اللي هنتوصيل لها..."></textarea>
+                <textarea id="fMessage" name="message" rows="4" required maxlength="4000" data-i18n-placeholder="f_message_ph" placeholder="القطع والمقاسات والمدينة..."></textarea>
 
                 <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -191,20 +247,24 @@
         <div class="footer-inner">
             <div class="footer-brand">
                 <img src="img/logo-on-black.jpeg" alt="">
-                <span>TAFRA</span>
-                <small data-i18n="footer_tag">Wear your confidence</small>
+                <span>TAFRA<small data-i18n="footer_tag">Wear your confidence</small></span>
             </div>
             <nav class="footer-links">
                 <a href="#collections" data-i18n="n_collections">المجموعات</a>
                 <a href="#shop" data-i18n="n_shop">المتجر</a>
-                <a href="#style" data-i18n="n_style">دليل الموضة</a>
+                <a href="#sizes" data-i18n="n_size">المقاسات</a>
+                <a href="#faq" data-i18n="footer_help">الطلب والشحن</a>
                 <a href="#contact" data-i18n="n_contact">تواصل</a>
             </nav>
             <p class="footer-note">© <span id="year"></span> TAFRA · <span data-i18n="footer_rights">كل الحقوق محفوظة</span></p>
         </div>
     </footer>
 
-    <!-- ===================== واتساب عائم ===================== -->
+    <!-- ===================== أزرار عائمة ===================== -->
+    <button class="order-fab" id="orderFab" type="button" aria-label="Order">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="order-count" id="orderCount">0</span>
+    </button>
     <a class="wa-fab" id="waFab" target="_blank" rel="noopener" aria-label="WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
@@ -219,14 +279,49 @@
                 <span class="modal-cat" id="modalCat"></span>
                 <h3 id="modalTitle"></h3>
                 <p id="modalDesc"></p>
+                <p class="modal-fabric" id="modalFabric"></p>
                 <div class="modal-opts" id="modalOpts"></div>
-                <p class="modal-price" id="modalPrice"></p>
-                <a class="btn-gold wide" id="modalOrder" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="order_wa">اطلب على واتساب</span></a>
+                <div class="modal-foot">
+                    <p class="modal-price" id="modalPrice"></p>
+                    <button class="btn-gold" type="button" id="modalAdd"><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="add_order">ضيف للأوردر</span></button>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- ===================== درج الأوردر ===================== -->
+    <div class="drawer-back hidden" id="drawerBack"></div>
+    <aside class="drawer" id="drawer" aria-label="Order">
+        <div class="drawer-head">
+            <h3><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="order">أوردرك</span></h3>
+            <button class="modal-close static" type="button" id="orderClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="order-lines" id="orderLines"></div>
+        <div class="drawer-foot">
+            <label class="city-label" for="cityInput" data-i18n="wa_city">المدينة</label>
+            <input id="cityInput" type="text" maxlength="60">
+            <p class="ship-note" id="shipNote"></p>
+            <p class="free-ship" id="freeShipLine"></p>
+            <div class="total-row"><span data-i18n="total">الإجمالي</span><b id="orderTotal">0</b></div>
+            <button class="btn-gold wide" type="button" id="orderCheckout"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="checkout">أرسل الأوردر على واتساب</span></button>
+            <button class="btn-line wide" type="button" id="orderClear" data-i18n="clear">امسح الكل</button>
+        </div>
+    </aside>
+
     <script src="catalog.js"></script>
     <script src="2.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "TAFRA",
+      "slogan": "Wear your confidence",
+      "email": "mtzm2225@gmail.com",
+      "telephone": "+201280090726",
+      "url": "https://moatazsmohamed.github.io/12.tafra/",
+      "address": { "@type": "PostalAddress", "addressLocality": "Alexandria", "addressCountry": "EG" }
+    }
+    </script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA black hoodie">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <g stroke="#0f0e0c" stroke-width="6" stroke-linejoin="round">
+    <path d="M320 300 L420 240 Q500 300 580 240 L680 300 L780 470 L690 520 L690 850 Q500 872 310 850 L310 520 L220 470 Z" fill="#17150f"/>
+    <path d="M400 250 Q500 150 600 250 Q560 320 500 322 Q440 320 400 250 Z" fill="#0f0e0c"/>
+    <path d="M360 620 L640 620 L640 720 Q500 740 360 720 Z" fill="#0f0e0c"/>
+  </g>
+  <g stroke="#d4af37" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M470 320 L462 430"/><path d="M530 320 L538 430"/>
+  </g>
+  <g fill="none" stroke="#d4af37" stroke-width="6" stroke-linecap="round">
+    <path d="M500 380 L500 450"/><path d="M478 400 L522 400"/><path d="M484 428 L516 428"/>
+    <path d="M514 388 Q478 412 486 448"/>
+  </g>
+  <text x="500" y="925" font-family="Inter,Arial" font-size="26" letter-spacing="8" fill="#b89728" text-anchor="middle">TAFRA</text>
+</svg>

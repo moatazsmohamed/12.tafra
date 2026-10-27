@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA gift set box">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <g stroke="#0f0e0c" stroke-width="6" stroke-linejoin="round">
+    <path d="M250 430 L750 430 L750 800 L250 800 Z" fill="#17150f"/>
+    <path d="M220 330 L780 330 L780 440 L220 440 Z" fill="#211e18"/>
+  </g>
+  <rect x="470" y="330" width="60" height="470" fill="#d4af37" opacity=".9"/>
+  <g fill="none" stroke="#d4af37" stroke-width="8" stroke-linecap="round">
+    <path d="M500 520 L500 640"/><path d="M456 552 L544 552"/><path d="M468 604 L532 604"/>
+    <path d="M530 532 Q456 578 472 646"/>
+  </g>
+  <text x="500" y="712" font-family="Inter,Arial" font-size="30" letter-spacing="12" fill="#d4af37" text-anchor="middle">TAFRA</text>
+  <text x="500" y="880" font-family="Inter,Arial" font-size="24" letter-spacing="6" fill="#8a8271" text-anchor="middle">GIFT SET</text>
+</svg>

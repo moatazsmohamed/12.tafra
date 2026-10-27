@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="TAFRA cargo pants">
+  <rect width="1000" height="1000" fill="#f4f0e8"/>
+  <g stroke="#8c7f66" stroke-width="6" stroke-linejoin="round">
+    <path d="M340 170 L660 170 L690 320 L672 860 L540 860 L508 470 L476 860 L344 860 L326 320 Z" fill="#cdbfa4"/>
+    <path d="M330 250 L470 250 L470 300 L330 300 Z" fill="#bfae8e"/>
+    <path d="M530 250 L670 250 L670 300 L530 300 Z" fill="#bfae8e"/>
+    <path d="M336 430 L420 430 L420 560 L336 560 Z" fill="#bfae8e"/>
+    <path d="M580 430 L664 430 L664 560 L580 560 Z" fill="#bfae8e"/>
+  </g>
+  <g stroke="#17150f" stroke-width="4" stroke-dasharray="14 12" fill="none">
+    <path d="M336 452 L420 452"/><path d="M580 452 L664 452"/>
+  </g>
+  <text x="500" y="930" font-family="Inter,Arial" font-size="26" letter-spacing="8" fill="#8a7a5c" text-anchor="middle">TAFRA</text>
+</svg>
