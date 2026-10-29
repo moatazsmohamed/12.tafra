@@ -47,11 +47,7 @@
 | مكان | رابط |
 |---|---|
 | Vercel (الرابط الأساسي) | https://tafrawear.vercel.app |
-| GitHub Pages | محتاج يفعّل من Settings → Pages → Branch: `main` / root |
+| GitHub Pages | https://moatazsmohamed.github.io/12.tafra |
 
-تحديث الموقع على Vercel بعد أي تعديل:
-
-```
-npx vercel deploy --prod --yes
-```
+أي `push` على فرع `main` بينشر على Vercel أوتوماتيك — ملهوش لازمة أي أمر يدوي.
 
